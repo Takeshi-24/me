@@ -1,0 +1,103 @@
+.primary
+  position: relative
+  flex-grow: 1
+  min-height: 100vh
+  background-color: $primary
+
+  &__wrapper
+    max-width: 680px
+    padding: 60px 0
+
+  &__heading
+    margin: 0 0 20px 0
+    color: lighten($highlight, 20%)
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+
+.experience
+
+  &__el
+    margin-bottom: 45px
+
+    &:last-child
+      margin-bottom: 0
+
+    .link
+      display: flex
+      justify-content: space-between
+      color: $secondary
+
+    .short
+      max-width: 160px
+
+      &__title
+        margin-top: 0
+        color: $white
+        font-size: 15px
+        font-weight: 700
+
+    .extended
+
+      &__role
+        margin-top: 0
+        color: $white
+        font-size: 15px
+        font-weight: 700
+
+      &__description
+        margin-bottom: 0
+        max-width: 400px
+
+.additional
+  margin-top: 90px
+
+  .about
+    float: left
+    width: 50%
+    padding-right: 30px
+
+  .technical
+    float: left
+    width: 50%
+
+.schooling
+  margin-bottom: 60px
+
+.education
+
+  &__el
+    margin-bottom: 30px
+
+    &:last-child
+      margin-bottom: 0
+
+    .degree
+      margin-bottom: 10px
+      color: $white
+      font-weight: 700
+
+    .school
+      margin-bottom: 0
+
+.hobbies
+  margin-bottom: 0
+
+.skills
+  display: flex
+  flex-wrap: wrap
+
+  &__el
+    display: flex
+    align-items: center
+    width: 25%
+    margin-bottom: 30px
+
+    svg
+      width: 100%
+      max-width: 40px
+      max-height: 40px
+
+.technical__list
+  margin-bottom: 0
+  font-size: 11px

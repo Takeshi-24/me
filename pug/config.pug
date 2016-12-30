@@ -1,0 +1,114 @@
+//-------------------- Introduction --------------------//
+
+//- HTML title & meta
+-
+  head = {
+    title: "Bucky Maler | Creative Front-End Developer",
+    description: "Bucky Maler creative front-end developer",
+    keywords: "resume, creative developer, front-end developer",
+    author: "Bucky Maler"
+  }
+
+//- Header
+    Set header image in introduction.sass
+-
+  header = {
+    name: {
+      first: "Bucky",
+      last: "Maler"
+    }
+  }
+
+//- Basic contact and online presence
+    ONLY change the phone numbers, maintain "tel:" in the href
+    ONLY change the email addresses, maintain "mailto:" in the href
+-
+  basics = {
+    Call: {
+      display: "407-488-8478",
+      href: "tel:407-488-8478"
+    },
+    Mail: {
+      display: "bucky@buckymaler.com",
+      href: "mailto:bucky@buckymaler.com"
+    },
+    Web: {
+      display: "buckymaler.com",
+      href: "http://buckymaler.com"
+    }
+  }
+
+
+//- Objective / Executive Summary / About
+- blurb = "<span>Hello</span> With my front-end development skillset, I'd like to make a difference by providing a reliable, repsonsive, and performant user interface for software that is interacted with on a daily basis."
+
+//- Online elsewhere
+-
+  socials = {
+    Twitter: {
+      display: "@BuckyMaler",
+      url: "https://twitter.com/BuckyMaler"
+    },
+    GitHub: {
+      display: "BuckyMaler",
+      url: "https://github.com/BuckyMaler"
+    },
+    LinkedIn: {
+      display: "BuckyMaler",
+      url: "https://www.linkedin.com/in/buckymaler"
+    }
+  }
+
+//-------------------- Primary --------------------//
+
+//- Experience section
+    If no url exists: remove the "url" option entirely
+-
+  experience = {
+    heading: "Experience",
+    content: {
+      "Simply2do": {
+        date: "Nov 2016",
+        role: "Full-Stack Developer",
+        description: "Created a full-stack task manager. Produced a front-end managed by React & Backbone, as well as, a back-end managed by Express & Mongoose. Storing user and task data is accomplished with a Mongo database. Tasks can be added, removed, and marked as complete. In addition to that, tasks can be filtered by completion status.",
+        url: "http://simply2do.herokuapp.com"
+      },
+      "Global: HTML5 website template": {
+        date: "Jul 2016",
+        role: "Front-End Developer",
+        description: "Crafted a modern and sleek website template for profressionals in the creative industry. Global is grid framework independent, and fully responsive. The Sass is organized following SMACSS conventions and written following BEM naming conventions. Global features a 3D perspective menu.",
+        url: "http://buckymaler.com/global"
+      },
+      "The Art of Manliness": {
+        date: "Feb 2016 - Aug 2016",
+        role: "Web Development Intern",
+        description: "Responsible for creation of low fidelity design and WordPress development. Process included wireframing and producing front & back-end code to build upon an existing theme.",
+      }
+    }
+  }
+
+
+//- Education section
+-
+  education = {
+    heading: "Education",
+    content: {
+      "Graduated Southwestern University 2016": "BA in Computer Science"
+    }
+  }
+
+
+//- Hobbies section
+-
+  hobbies = {
+    heading: "Hobbies",
+    list: "Fitness, Philosophy, Design, Disc Golf, & above all else... Netflix."
+  }
+
+//- Skills section
+    Skill svgs must be added/removed directly from index.pug
+-
+  skills = {
+    heading: "Skills",
+    list: "JavaScript, React, jQuery, Backbone, Electron, Gulp, HTML5, CSS3, Sass, npm, Bower, Git, GitHub, Jekyll, WordPress"
+  }

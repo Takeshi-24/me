@@ -1,0 +1,41 @@
+{
+  "name": "me",
+  "version": "0.0.1",
+  "description": "everything you need in a resume and nothing that you don't",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npm run build && run-p start watch",
+    "start": "browser-sync start --no-notify -s '.' -f 'index.html' 'assets/css/main.css' 'assets/img/**/*'",
+    "build:css": "node-sass --output-style compressed assets/css/main.sass | postcss -u autoprefixer -o assets/css/main.css",
+    "build:html": "pug pug/index.pug -o ./",
+    "build": "npm run build:css && npm run build:html",
+    "watch": "onchange 'pug/*.pug' 'assets/css/**/*.{sass,scss}' 'assets/img/**/*' -- npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuckyMaler/me.git"
+  },
+  "author": {
+    "name": "Bucky Maler",
+    "url": "buckymaler.com",
+    "mail": "bucky@buckymaler.com"
+  },
+  "keywords": [
+    "resume",
+    "template",
+    "jade",
+    "html",
+    "sass"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "browser-sync": "^2.18.5",
+    "node-sass": "^4.1.1",
+    "npm-run-all": "^3.1.2",
+    "onchange": "^3.2.1",
+    "postcss-cli": "^2.6.0",
+    "pug": "^2.0.0-beta6",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
