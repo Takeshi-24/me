@@ -20,6 +20,7 @@ This project was developed with Pug & Sass.
 ## Credits
 
 - [Robert Luke](https://dribbble.com/RobLukeDesign) heavily influenced the visual design
+- [Francois Carstens](https://github.com/FranCarstens) design tips & proofing
 - Logo attributions
   - [Backbone](http://backbonejs.org)
   - [Bower](https://bower.io)
