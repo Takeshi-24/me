@@ -59,3 +59,54 @@
   span
     color: $primary
     font-weight: 700
+
+@media (max-width: 1199px)
+  .introduction
+    width: 100%
+    min-height: auto
+
+    &__wrapper
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      max-width: 900px
+
+  .header
+    align-items: flex-start
+    width: 50%
+
+  .basics
+    width: 50%
+    margin-top: 0
+
+  .socials
+    width: 50%
+    margin-top: 45px
+
+  .blurb
+    width: 50%
+    margin-top: 45px
+    padding-right: 45px
+
+@media (max-width: 735px)
+  .introduction
+
+    &__wrapper
+      display: block
+      padding-top: 45px
+
+  .header
+    align-items: center
+    width: 100%
+
+  .basics
+    width: 100%
+    margin-top: 45px
+
+  .socials
+    width: 100%
+
+  .blurb
+    width: 100%
+    max-width: 350px
+    padding-right: 0

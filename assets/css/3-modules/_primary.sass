@@ -1,11 +1,10 @@
 .primary
   position: relative
   flex-grow: 1
-  min-height: 100vh
   background-color: $primary
 
   &__wrapper
-    max-width: 680px
+    max-width: 900px
     padding: 60px 0
 
   &__heading
@@ -29,8 +28,8 @@
       color: $secondary
 
     .short
-      max-width: 200px
-      padding-right: 30px
+      width: 200px
+      margin-right: 45px
 
       &__title
         margin-top: 0
@@ -47,8 +46,8 @@
         font-weight: 700
 
       &__description
+        max-width: 600px
         margin-bottom: 0
-        max-width: 450px
 
 .additional
   margin-top: 90px
@@ -56,7 +55,7 @@
   .about
     float: left
     width: 50%
-    padding-right: 30px
+    padding-right: 45px
 
   .technical
     float: left
@@ -102,3 +101,53 @@
 .technical__list
   margin-bottom: 0
   font-size: 11px
+
+@media (max-width: 735px)
+  .primary
+    min-height: auto
+
+  .experience
+
+    &__el
+
+      .link
+        display: block
+
+      .short
+        width: 100%
+        max-width: 100%
+        margin: 0 0 20px 0
+
+        &__title
+          display: inline-block
+          margin: 0 30px 0 0
+
+      .extended
+
+        &__description
+          max-width: 100%
+
+  .additional
+    display: flex
+    flex-direction: column
+    margin-top: 60px
+
+    .about
+      float: none
+      order: 2
+      width: 100%
+      padding-right: 0
+
+    .technical
+      float: none
+      order: 1
+      width: 100%
+
+  .schooling
+    margin-bottom: 45px
+
+  .hobbies
+    margin-bottom: 0
+
+  .technical
+    margin-bottom: 60px
