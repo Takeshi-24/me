@@ -5,19 +5,20 @@
 
   &__wrapper
     max-width: 900px
-    padding: 60px 0
+    padding: 4rem 0
 
   &__heading
-    margin: 0 0 20px 0
+    margin: 0 0 1.5rem 0
     color: lighten($highlight, 20%)
-    font-size: 20px
+    +font-size(20)
     font-weight: 700
+    line-height: 3rem
     text-transform: uppercase
 
 .experience
 
   &__el
-    margin-bottom: 45px
+    margin-bottom: 3rem
 
     &:last-child
       margin-bottom: 0
@@ -29,12 +30,12 @@
 
     .short
       width: 200px
-      margin-right: 45px
+      margin-right: 3rem
 
       &__title
         margin-top: 0
         color: $white
-        font-size: 15px
+        +font-size(15)
         font-weight: 700
 
     .extended
@@ -42,7 +43,7 @@
       &__role
         margin-top: 0
         color: $white
-        font-size: 15px
+        +font-size(15)
         font-weight: 700
 
       &__description
@@ -51,22 +52,22 @@
 
 .additional
   display: flex
-  margin-top: 90px
+  margin-top: 6rem
 
   .about
     width: 50%
-    padding-right: 45px
+    padding-right: 3rem
 
   .technical
     width: 50%
 
 .schooling
-  margin-bottom: 60px
+  margin-bottom: 4rem
 
 .education
 
   &__el
-    margin-bottom: 30px
+    margin-bottom: 2rem
 
     &:last-child
       margin-bottom: 0
@@ -90,7 +91,7 @@
     display: flex
     align-items: center
     width: 25%
-    margin-bottom: 30px
+    margin-bottom: 2rem
 
     svg
       width: 100%
@@ -99,7 +100,8 @@
 
 .technical__list
   margin-bottom: 0
-  font-size: 11px
+  +font-size(11)
+  line-height: 1.25rem
 
 @media (max-width: 735px)
   .experience
@@ -112,11 +114,11 @@
       .short
         width: 100%
         max-width: 100%
-        margin: 0 0 20px 0
+        margin: 0 0 1.5rem 0
 
         &__title
           display: inline-block
-          margin: 0 30px 0 0
+          margin: 0 2rem 0 0
 
       .extended
 
@@ -125,7 +127,7 @@
 
   .additional
     flex-direction: column
-    margin-top: 60px
+    margin-top: 4rem
 
     .about
       order: 2
@@ -137,7 +139,7 @@
       width: 100%
 
   .schooling
-    margin-bottom: 45px
+    margin-bottom: 3rem
 
   .technical
-    margin-bottom: 60px
+    margin-bottom: 4rem
