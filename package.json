@@ -9,7 +9,7 @@
     "build:css": "node-sass --output-style compressed assets/css/main.sass | postcss -u autoprefixer -o assets/css/main.css",
     "build:html": "pug pug/index.pug -o ./",
     "build": "npm run build:css && npm run build:html",
-    "watch": "onchange 'pug/*.pug' 'assets/css/**/*.{sass,scss}' 'assets/img/**/*' -- npm run build"
+    "watch": "onchange 'pug/*.pug' 'assets/css/**/*.{sass,scss}' -- npm run build"
   },
   "repository": {
     "type": "git",
